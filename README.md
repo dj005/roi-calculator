@@ -1,6 +1,7 @@
 # ROI Calculator
 
-This project contains three AEM components which are as follows
+This project contains three AEM components which are as follows. Labels are configurable via dialog box.
+
 ## Frontend coding challenge - ROI Calculator
 This AEM component calculates ROI based on user inputs using JS.
 ## Backend coding challenge - ROI Calculator & history.
@@ -22,28 +23,29 @@ This AEM component calculates and save ROI based on user input under `/var/demos
 > mvn clean install -PautoInstallPackage
 
 * Go to below links to view ROI calculator implementation:
-	* Backend project (ROI Calculator and ROI history):
+	* Backend project (ROI Calculator and ROI history)
 `http://localhost:4502/content/demosite/us/en/roicalcv2.html`
 `http://localhost:4502/content/demosite/us/en/roihistory.html`
+
 	* Frontend project (ROI Calculator):
 `http://localhost:4502/content/demosite/us/en/roicalcv1.html`
 
 ## Screenshots
 
-* ROI-Calculator-1-Form
+* ROI Calculator form
 ![ROI-Calculator-1-Form](https://github.com/dj005/screenshots/blob/main/ROI-Calculator-1-Form.png "ROI-Calculator-1-Form")
 
-* ROI-Calculator-1-Results
+* ROI Calculator Results
 ![ROI-Calculator-1-Results](https://github.com/dj005/screenshots/blob/main/ROI-Calculator-1-Results.png "ROI-Calculator-1-Results")
 
-* ROI-Calculator-2-Form
+* ROI Calculator with historical storage
 ![ROI-Calculator-2-Form](https://github.com/dj005/screenshots/blob/main/ROI-Calculator-2-Form.png "ROI-Calculator-2-Form")
 
-* ROI-History-1-Form
+* ROI get History form
 ![ROI-History-1-Form](https://github.com/dj005/screenshots/blob/main/ROI-History-1-Form.png "ROI-History-1-Form")
 
-* ROI-History-1-Results
+* ROI get History Results
 ![ROI-History-1-Results](https://github.com/dj005/screenshots/blob/main/ROI-History-1-Results.png "ROI-History-1-Results")
 
-* CRX-roi-data
+* CRX ROI data structure
 ![CRX-roi-data](https://github.com/dj005/screenshots/blob/main/CRX-roi-data.png "CRX-roi-data")
