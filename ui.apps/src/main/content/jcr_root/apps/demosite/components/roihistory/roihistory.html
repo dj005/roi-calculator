@@ -1,0 +1,33 @@
+<div class="roi-history">
+
+<sly data-sly-use.model="com.adobe.aem.demosite.core.models.ROIHistoryModel"/>
+
+    <h2>${model.headline}</h2>
+    <!-- ROI Calculator -->
+    <div class="history">
+        <div id="form">
+            
+            <div class="form-group">
+                <div class="form-userId grid">
+                    <label for="userId">${model.userId}</label>
+                    <input id="userId" />
+                </div>
+            </div>
+            <div class="form-group">
+                <button id="roihistory-submit-button">Get ROI History</button>
+            </div>
+        </div>
+    </div>
+    <!-- Results Section -->
+    <div id="form-results" class="form-results">
+    	<div  id="form-results-table-row" class="form-results-table-row">
+			<div class="form-results-header">UserId</div>
+			<div class="form-results-header">Investment</div>
+			<div class="form-results-header">Revenue</div>
+			<div class="form-results-header">Expenses</div>
+			<div class="form-results-header">Roi</div>
+
+    	</div>
+    </div>
+
+</div>

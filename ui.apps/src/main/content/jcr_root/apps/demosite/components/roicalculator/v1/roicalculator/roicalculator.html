@@ -1,0 +1,74 @@
+<div>
+
+<sly data-sly-use.roi="com.adobe.aem.demosite.core.models.ROICalculatorV1Model"/>
+
+    <!-- ROI Calculator -->
+    <div class="calculator">
+        <div id="form">
+            <h2>${roi.inputHeadline}</h2>
+            <div class="form-group">
+                <div class="form-employee grid">
+                    <label for="employees">${roi.employees}</label>
+                    <input type="number" id="employees" value="250000" min="500" max="500000" />
+                </div>
+
+                <div class="form-revenue grid">
+                    <label for="revenue">${roi.revenue}</label>
+                    <input type="number" id="revenue" value="1000000" />
+                </div>
+
+                <div class="form-ttr grid">
+                    <label for="ttr">${roi.ttr}</label>
+                    <input type="number" id="ttr" value="40" />
+                </div>
+
+                <div class="form-tickets grid">
+                    <label for="tickets">${roi.tickets}</label>
+                    <input type="number" id="tickets" value="100000" />
+                </div>
+
+                <div class="form-cpt grid">
+                    <label for="cpt">${roi.cpt}</label>
+                    <input type="number" id="cpt" value="30" />
+                </div>
+
+
+
+            </div>
+            <div class="form-group">
+                <button id="roi1-submit-button">Next</button>
+            </div>
+        </div>
+    </div>
+    <!-- Results Section -->
+    <div id="form-results" class="form-results">
+        <h2>${roi.outputHeadline}</h2>
+
+        <div class="tickets grid">
+            <div class="">${roi.resolved}
+            </div>
+            <div id="result-tickets"></div>
+        </div>
+
+        <div class="accelerated grid">
+            <div class="label-accelerated">${roi.accelerated}
+            </div>
+            <div id="result-accelerated"></div>
+        </div>
+
+        <div class="productive grid">
+            <div class="label-productive">${roi.productive}
+            </div>
+            <div id="result-productive"></div>
+        </div>
+
+        <div class="wait-hrs grid">
+            <div class="label-wait-hrs">${roi.wait}
+            </div>
+            <div id="result-wait-hrs"></div>
+        </div>
+
+
+    </div>
+
+</div>
