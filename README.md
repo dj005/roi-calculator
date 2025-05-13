@@ -24,11 +24,11 @@ This AEM component calculates and save ROI based on user input under `/var/demos
 
 * Go to below links to view ROI calculator implementation:
 	* Backend project (ROI Calculator and ROI history)
-`http://localhost:4502/content/demosite/us/en/roicalcv2.html`
-`http://localhost:4502/content/demosite/us/en/roihistory.html`
+http://localhost:4502/content/demosite/us/en/roicalcv2.html
+http://localhost:4502/content/demosite/us/en/roihistory.html
 
 	* Frontend project (ROI Calculator):
-`http://localhost:4502/content/demosite/us/en/roicalcv1.html`
+http://localhost:4502/content/demosite/us/en/roicalcv1.html
 
 ## Screenshots
 
