@@ -1,36 +1,53 @@
-.form-group,
-.tickets,
-.accelerated,
-.productive,
-.wait-hrs {
-  display: grid;
-  flex-direction:column;
-  gap: 16px;
-  padding: 16px 0;
+.roi-history__form {
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 350px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
 
-.grid {
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-}
-.calculator,
-.form-results {
-  padding: 16px 40px;
+.roi-history__userId {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+  justify-content: space-between;
 }
 
+.roi-history__button {
+  text-align: center;
+}
 
-.form-results {
+.roi-history__result {
   display: none;
+  padding: 0 60px;
 }
 
-.roi-history {
-	.form-results-table-row {
-		display:grid;
-		grid-template-columns: repeat(5,1fr);
-		 gap: 16px;
-	}
-	
-	.form-results-header {
-		font-weight: 500;
-	}
+.roi-history--button {
+  padding: 4px 12px;
+}
+
+.roi-history__input--invalid {
+  border: 1px solid red;
+}
+
+.roi-history__table {
+  display:grid;
+	grid-template-columns: repeat(5,1fr);
+  border-width: 1px;
+}
+
+.roi-history__table-header {
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid white;
+  padding: 16px;
+  text-align: center;
+}
+
+.roi-history__table-data {
+  border: 1px solid white;
+  padding: 16px;
+  text-align: center;
 }

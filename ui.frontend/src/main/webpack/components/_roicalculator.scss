@@ -1,24 +1,80 @@
-.form-group,
-.tickets,
-.accelerated,
-.productive,
-.wait-hrs {
-  display: grid;
-  flex-direction:column;
-  gap: 16px;
-  padding: 16px 0;
+.roi-calculator__form,
+.roi-calculator__result,
+.roi-calculator-v2__form,
+.roi-calculator-v2__result  {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 0 40px;
+  padding-bottom: 40px;
+
+  h2 {
+    text-align: center;
+  }
 }
 
-.grid {
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-}
-.calculator,
-.form-results {
-  padding: 16px 40px;
+.roi-calculator__form {
+  .roi-calculator__label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
 }
 
+.roi-calculator-v2__form {
+  .roi-calculator-v2__label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
 
-.form-results {
+.roi-calculator__input,
+.roi-calculator-v2__input {
+  margin-bottom: 24px;
+  width: 100%;
+  height: 32px;
+}
+
+.roi-calculator__button button,
+.roi-calculator-v2__button button {
+  background-color: cadetblue;
+  width: 100%;
+  height: 48px;
+}
+
+.roi-calculator__result {
   display: none;
+
+  .roi-calculator__result-field {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .roi-calculator__label {
+    flex-grow: 1;
+  }
+}
+
+.roi-calculator-v2__result {
+  display: none;
+
+  .roi-calculator-v2__result-field {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .roi-calculator-v2__label {
+    flex-grow: 1;
+  }
+}
+
+.roi-calculator__input--invalid,
+.roi-calculator-v2__input--invalid {
+  border: 1px solid red;
+}
+
+.roi-calculator-v2__history-btn {
+  text-align: center;
+}
+
+.roi-calculator-v2--history-btn {
+  padding: 4px 12px;
 }

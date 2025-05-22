@@ -1,74 +1,63 @@
-<div>
+<sly data-sly-use.model="com.adobe.aem.demosite.core.models.ROICalculatorV1Model"/>
 
-<sly data-sly-use.roi="com.adobe.aem.demosite.core.models.ROICalculatorV1Model"/>
+<div class="roi-calculator__container">
+    <div class="roi-calculator__form">
+        <h2>${model.inputHeadline}</h2>
+        <div class="roi-calculator__employee">
+            <div class="roi-calculator__label">${model.employees}</div>
+            <input type="number" class="roi-calculator__input" id="roi-calculator__employee--id" />
+        </div>
 
-    <!-- ROI Calculator -->
-    <div class="calculator">
-        <div id="form">
-            <h2>${roi.inputHeadline}</h2>
-            <div class="form-group">
-                <div class="form-employee grid">
-                    <label for="employees">${roi.employees}</label>
-                    <input type="number" id="employees" value="250000" min="500" max="500000" />
-                </div>
+        <div class="roi-calculator__revenue">
+            <div class="roi-calculator__label">${model.revenue}</div>
+            <input type="number" class="roi-calculator__input" id="roi-calculator__revenue--id" />
+        </div>
 
-                <div class="form-revenue grid">
-                    <label for="revenue">${roi.revenue}</label>
-                    <input type="number" id="revenue" value="1000000" />
-                </div>
+        <div class="roi-calculator__ttr">
+            <div class="roi-calculator__label">${model.ttr}</div>
+            <input type="number" class="roi-calculator__input" id="roi-calculator__ttr--id" />
+        </div>
 
-                <div class="form-ttr grid">
-                    <label for="ttr">${roi.ttr}</label>
-                    <input type="number" id="ttr" value="40" />
-                </div>
+        <div class="roi-calculator__tickets">
+            <div class="roi-calculator__label">${model.tickets}</div>
+            <input type="number" class="roi-calculator__input" id="roi-calculator__tickets--id" />
+        </div>
 
-                <div class="form-tickets grid">
-                    <label for="tickets">${roi.tickets}</label>
-                    <input type="number" id="tickets" value="100000" />
-                </div>
+        <div class="roi-calculator__cpt">
+            <div class="roi-calculator__label">${model.cpt}</div>
+            <input type="number" class="roi-calculator__input" id="roi-calculator__cpt--id" />
+        </div>
 
-                <div class="form-cpt grid">
-                    <label for="cpt">${roi.cpt}</label>
-                    <input type="number" id="cpt" value="30" />
-                </div>
-
-
-
-            </div>
-            <div class="form-group">
-                <button id="roi1-submit-button">Next</button>
-            </div>
+        <div class="roi-calculator__button">
+            <button id="roi-calculator--button">Submit</button>
         </div>
     </div>
-    <!-- Results Section -->
-    <div id="form-results" class="form-results">
-        <h2>${roi.outputHeadline}</h2>
 
-        <div class="tickets grid">
-            <div class="">${roi.resolved}
+    <div class="roi-calculator__result">
+        <h2>${model.outputHeadline}</h2>
+
+        <div class="roi-calculator__result-field">
+            <div class="roi-calculator__label">${model.resolved}
             </div>
-            <div id="result-tickets"></div>
+            <div id="roi-calculator__tickets--id"></div>
         </div>
 
-        <div class="accelerated grid">
-            <div class="label-accelerated">${roi.accelerated}
+        <div class="roi-calculator__result-field">
+            <div class="roi-calculator__label">${model.accelerated}
             </div>
-            <div id="result-accelerated"></div>
+            <div id="roi-calculator__accelerated--id"></div>
         </div>
 
-        <div class="productive grid">
-            <div class="label-productive">${roi.productive}
+        <div class="roi-calculator__result-field">
+            <div class="roi-calculator__label">${model.productive}
             </div>
-            <div id="result-productive"></div>
+            <div id="roi-calculator__productive--id"></div>
         </div>
 
-        <div class="wait-hrs grid">
-            <div class="label-wait-hrs">${roi.wait}
+        <div class="roi-calculator__result-field">
+            <div class="roi-calculator__label">${model.wait}
             </div>
-            <div id="result-wait-hrs"></div>
+            <div id="roi-calculator__wait--id"></div>
         </div>
-
-
     </div>
-
 </div>

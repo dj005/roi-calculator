@@ -45,11 +45,11 @@ public class ROICalculatorV1Model {
 	protected String accelerated;
 	
 	@ValueMapValue
-	@Default(values="Productive Hours Saved per Employee")
+	@Default(values="Productive Hours")
 	protected String productive;
 	
 	@ValueMapValue
-	@Default(values="Total Wait Hours Saved per Employee")
+	@Default(values="Total Wait Hours")
 	protected String wait;
 
 	public String getInputHeadline() {

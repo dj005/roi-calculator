@@ -1,33 +1,26 @@
-<div class="roi-history">
+<div class="roi-history__container">
 
-<sly data-sly-use.model="com.adobe.aem.demosite.core.models.ROIHistoryModel"/>
+    <sly data-sly-use.model="com.adobe.aem.demosite.core.models.ROIHistoryModel" />
+    <div class="roi-history__headline">
+        <h2>${model.headline}</h2>
+    </div>
 
-    <h2>${model.headline}</h2>
-    <!-- ROI Calculator -->
-    <div class="history">
-        <div id="form">
-            
-            <div class="form-group">
-                <div class="form-userId grid">
-                    <label for="userId">${model.userId}</label>
-                    <input id="userId" />
-                </div>
-            </div>
-            <div class="form-group">
-                <button id="roihistory-submit-button">Get ROI History</button>
-            </div>
+
+    <div class="roi-history__form">
+        <div class="roi-history__userId">
+            <div class="roi-history__label">${model.userId}</div>
+            <input class="roi-history__input" id="roi-history__userId--id" />
+        </div>
+
+        <div class="roi-history__button">
+            <button id="roi-history--button" class="roi-history--button">Get ROI History</button>
         </div>
     </div>
-    <!-- Results Section -->
-    <div id="form-results" class="form-results">
-    	<div  id="form-results-table-row" class="form-results-table-row">
-			<div class="form-results-header">UserId</div>
-			<div class="form-results-header">Investment</div>
-			<div class="form-results-header">Revenue</div>
-			<div class="form-results-header">Expenses</div>
-			<div class="form-results-header">Roi</div>
 
-    	</div>
+    <div class="roi-history__result">
+        <div class="roi-history__table">
+
+        </div>
     </div>
-
 </div>
+
